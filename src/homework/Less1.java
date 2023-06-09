@@ -1,4 +1,4 @@
-package Pack1;
+package homework;
 
 public class Less1 {
     public static void main(String[] args) {
@@ -7,6 +7,8 @@ public class Less1 {
 
         }
         System.out.println("YRA");
+
+
     }
 
 }
