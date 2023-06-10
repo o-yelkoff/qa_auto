@@ -10,5 +10,4 @@ public class HomeWork1 {
         int sum = myMethod(3, 6);
         System.out.println(sum);
     }
-
 }
