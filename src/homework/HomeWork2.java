@@ -26,12 +26,16 @@ public class HomeWork2 {
     }
 
     public static void main(String args[]) {
-        int inputnum = 26;
+        int inputnum = 168;
         long l = inputnum;
         String str1 = "Mickey";
         String str2 = "Mouse";
         System.out.println(findSum(inputnum));
-        System.out.println(findSum(l));
+        if (findSum(l)) {
+            System.out.println("Number " + l + " > 0");
+        } else {
+            System.out.println("Number " + l + " < 0");
+        }
         System.out.println(findSum(str1, str2));
     }
 }
