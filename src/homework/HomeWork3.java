@@ -13,8 +13,7 @@ public class HomeWork3 {
         } else {
             return word3;
         }
-    }
-
+}
     public static void main (String args[]){
         String word1 = "Rolls-Royce Motor";
         String word2 = "Maserati";
