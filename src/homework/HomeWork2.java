@@ -35,6 +35,7 @@ public class HomeWork2 {
         String str2 = "Mouse";
         System.out.println(findSum(inputnum));
         findSum(str1,str2);
-        findSum(l);
+        boolean result = findSum(l);
+        System.out.println("The result of calculation is " + result);
     }
 }
