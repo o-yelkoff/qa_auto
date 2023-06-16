@@ -5,13 +5,16 @@ public class HomeWork2 {
         int wordlenght = str1.length();
         int wordlenght1 = str2.length();
         int wordsum = wordlenght + wordlenght1;
+        System.out.println(wordsum);
         return wordsum;
     }
 
     static boolean findSum(long l) {
-        if (l >= 0) {
+        if (l > 0) {
+            System.out.println("Number " + l + " > 0");
             return true;
         } else {
+            System.out.println("Number " + l + " <= 0");
             return false;
         }
     }
@@ -26,16 +29,12 @@ public class HomeWork2 {
     }
 
     public static void main(String args[]) {
-        int inputnum = 168;
+        int inputnum = 348;
         long l = inputnum;
         String str1 = "Mickey";
         String str2 = "Mouse";
         System.out.println(findSum(inputnum));
-        if (findSum(l)) {
-            System.out.println("Number " + l + " > 0");
-        } else {
-            System.out.println("Number " + l + " < 0");
-        }
-        System.out.println(findSum(str1, str2));
+        findSum(str1,str2);
+        findSum(l);
     }
 }
