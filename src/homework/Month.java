@@ -28,7 +28,7 @@ public class Month {
     }
 
     public static void main(String args[]) {
-        int monthNumber = 2;
+        int monthNumber = 7;
         monthDayQuantity(monthNumber);
     }
 }
