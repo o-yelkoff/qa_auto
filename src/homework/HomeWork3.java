@@ -13,11 +13,12 @@ public class HomeWork3 {
         } else {
             return word3;
         }
-}
-    public static void main (String args[]){
+    }
+
+    public static void main(String args[]) {
         String word1 = "Rolls-Royce";
         String word2 = "Maserati";
         String word3 = "Porsche";
-        System.out.println(wordGreatLength(word1,word2,word3));
+        System.out.println(wordGreatLength(word1, word2, word3));
     }
 }
