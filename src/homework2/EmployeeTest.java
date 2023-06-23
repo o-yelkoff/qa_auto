@@ -14,6 +14,6 @@ public class EmployeeTest {
         System.out.println(employee.getSalary());
         System.out.println(employee.getSureName());
 
-        employee.surname
+
     }
 }

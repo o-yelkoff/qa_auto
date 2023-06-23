@@ -9,7 +9,8 @@ public class Employee {
     public Employee (String surname) {
         this.surname = surname;
     }
-    private Employee (double salary, String surname) {
+    private Employee (double salary, String surname,int id) {
+        this.id = id;
         this.surname = surname;
         this.salary = salary;
     }
@@ -27,5 +28,10 @@ public class Employee {
 
     public double getSalary(){
         return salary;
+    }
+
+    public static void main(String[] args) {
+        Employee employee = new Employee(2000,"Yelkoff", 13);
+        System.out.println(employee);
     }
     }
