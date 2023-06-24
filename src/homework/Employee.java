@@ -14,7 +14,7 @@ public class Employee {
         this.surname = surname;
         this.salary = salary;
     }
-    protected Employee ( String surname, int id) {
+    public Employee(String surname, int id) {
         this.surname = surname;
         this.id = id;
     }
@@ -32,6 +32,8 @@ public class Employee {
 
     public static void main(String[] args) {
         Employee employee = new Employee(2000,"Yelkoff", 13);
-        System.out.println(employee);
+        System.out.println(employee.surname);
+        System.out.println(employee.id);
+        System.out.println(employee.salary);
     }
     }
