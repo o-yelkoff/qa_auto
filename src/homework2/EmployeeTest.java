@@ -8,7 +8,7 @@ public class EmployeeTest {
         System.out.println(employee.getId());
         System.out.println(employee.getSalary());
         System.out.println(employee.getSureName());
-        
+
         employee = new Employee("Yelkoff2");
         System.out.println(employee.getId());
         System.out.println(employee.getSalary());

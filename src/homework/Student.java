@@ -19,11 +19,12 @@ public class Student {
         this.gpaFromLanguage = gpaFromLanguage;
     }
 
-    public static double studentTest (double gpaFromEconomy, double gpaFromLanguage, double gpaFromMath) {
+    public static double studentTest(double gpaFromEconomy, double gpaFromLanguage, double gpaFromMath) {
         double gpa;
         gpa = ((gpaFromEconomy + gpaFromLanguage + gpaFromMath) / 3);
         return gpa;
     }
+
     @Override
     public String toString() {
         return firstName + " " + lastName;
