@@ -5,21 +5,15 @@ public class Animal {
     String eat;
     String drink;
 
-    public Animal(int eyes, String eat, String drink) {
-        this.eyes = eyes;
-        this.eat = eat;
-        this.drink = drink;
+    public Animal() {
         System.out.println("I am animal");
     }
-
     void eat() {
         System.out.println("Animal eats");
     }
-
     void drink() {
         System.out.println("Animal drink");
     }
-
 }
 
 class Pet extends Animal {
@@ -27,11 +21,10 @@ class Pet extends Animal {
     int tail;
     int paw;
 
-    public Pet(int eyes, String eat, String drink, String name, int paw, int tail) {
-        super(eyes, eat, drink);
-        this.name = name;
-        this.paw = paw;
-        this.tail = tail;
+    public Pet() {
+        eyes = 2;
+        tail = 1;
+        paw =4;
         System.out.println("I am pet");
     }
 
@@ -44,24 +37,20 @@ class Pet extends Animal {
     }
 
     static class Dog extends Pet {
-
-        public Dog(int eyes, String eat, String drink, String name, int paw, int tail) {
-            super(eyes, eat, drink, name, paw, tail);
+        public Dog(String name) {
+            this.name = name;
             System.out.println("I am dog and my name is:" + name);
         }
-
         void play() {
             System.out.println("Dog plays");
         }
     }
 
     static class Cat extends Pet {
-
-        public Cat(int eyes, String eat, String drink, String name, int paw, int tail) {
-            super(eyes, eat, drink, name, paw, tail);
+        public Cat(String name) {
+            this.name = name;
             System.out.println("I am cat and my name is:" + name);
         }
-
         void sleep() {
             System.out.println("Cat sleeps");
         }
@@ -74,8 +63,8 @@ class Pet extends Animal {
 
     public static class Test {
         public static void main(String[] args) {
-            Cat cat1 = new Cat(2, "yes", "yes", "Gav", 4, 1);
-            Dog dog1 = new Dog(2, "yes", "yes", "Bumer", 4, 1);
+            Cat cat1 = new Cat("Gav");
+            Dog dog1 = new Dog("Bumer");
             System.out.println("The dog pow quantity is " + dog1.paw);
             cat1.sleep();
         }
