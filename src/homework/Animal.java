@@ -8,9 +8,11 @@ public class Animal {
     public Animal() {
         System.out.println("I am animal");
     }
+
     void eat() {
         System.out.println("Animal eats");
     }
+
     void drink() {
         System.out.println("Animal drink");
     }
@@ -24,7 +26,7 @@ class Pet extends Animal {
     public Pet() {
         eyes = 2;
         tail = 1;
-        paw =4;
+        paw = 4;
         System.out.println("I am pet");
     }
 
@@ -41,6 +43,7 @@ class Pet extends Animal {
             this.name = name;
             System.out.println("I am dog and my name is:" + name);
         }
+
         void play() {
             System.out.println("Dog plays");
         }
@@ -51,6 +54,7 @@ class Pet extends Animal {
             this.name = name;
             System.out.println("I am cat and my name is:" + name);
         }
+
         void sleep() {
             System.out.println("Cat sleeps");
         }
