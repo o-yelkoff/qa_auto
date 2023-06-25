@@ -23,7 +23,7 @@ public class Student {
     }
 
     public void setCourse(Integer course1) {
-        if ((course1 > 0) && (course1 < 11)) {
+        if ((course1 > 0) && (course1 < 5)) {
             course = course1;
         } else {
             System.out.println("ERROR! Please enter the valid course value ");
@@ -35,7 +35,7 @@ public class Student {
     }
 
     public void setGrade(Integer grade1) {
-        if ((grade1 > 0) && (grade1 < 5)) {
+        if ((grade1 > 0) && (grade1 < 11)) {
             grade = grade1;
         } else {
             System.out.println("ERROR! Please enter the valid grade value ");
@@ -43,7 +43,7 @@ public class Student {
     }
 
     public void showInfo (){
-        String studentInfo = (getName()+ " " + getCourse() + " " + getGrade());
+        String studentInfo = ("Name:" + getName()+ "; Course:" + getCourse() +  "; Grade:" + getGrade() + ";");
         System.out.println(studentInfo);
     }
 
