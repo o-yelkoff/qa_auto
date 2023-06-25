@@ -42,8 +42,8 @@ public class Student {
         }
     }
 
-    public void showInfo (){
-        String studentInfo = ("Name:" + getName()+ "; Course:" + getCourse() +  "; Grade:" + getGrade() + ";");
+    public void showInfo() {
+        String studentInfo = ("Name:" + getName() + "; Course:" + getCourse() + "; Grade:" + getGrade() + ";");
         System.out.println(studentInfo);
     }
 
