@@ -1,9 +1,9 @@
 package homework;
 
 public class StudentTest {
-    static Student student1 = new Student("XX123BB", "Alex", "Yelkoff", 2, 2.9, 2.9, 2.9);
-    static Student student2 = new Student("XX123BB", "Dmytro", "Lytcenko", 2, 4.0, 3.7, 5);
-    static Student student3 = new Student("XX123BB", "Vitalii", "Nemudrui", 2, 4.5, 3.5, 4.5);
+    static Student student1 = new Student("XX123BB", "Alex", "Yelkoff", 2, 4.5, 3.1, 3.9);
+    static Student student2 = new Student("XX465BB", "Dmytro", "Lytcenko", 2, 4.0, 3.7, 5);
+    static Student student3 = new Student("XX789BB", "Vitalii", "Nemudrui", 2, 4.5, 3.5, 4.5);
 
     public static double studentAveregeValue(Student student){
         return ((student.gpaFromEconomy+student.gpaFromMath+student.gpaFromLanguage)/3);
