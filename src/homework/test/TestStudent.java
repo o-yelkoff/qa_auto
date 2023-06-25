@@ -1,4 +1,6 @@
-package homework;
+package homework.test;
+
+import homework.Student;
 
 public class TestStudent {
     static Student student1 = new Student();
