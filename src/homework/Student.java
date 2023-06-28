@@ -29,9 +29,4 @@ public class Student {
     public String toString() {
         return firstName + " " + lastName;
     }
-
-    public static void main(String[] args) {
-
-
-    }
 }
