@@ -1,6 +1,6 @@
 package homework;
 
-public class Student {
+public class Student_hw5 {
     private String name;
     private Integer course;
     private Integer grade;
