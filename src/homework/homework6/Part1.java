@@ -4,17 +4,16 @@ import java.lang.Math;
 
 public class Part1 {
     public static int arrayTopValue(int[] numberArray) {
-
-        int value1 = Math.abs((numberArray[0] - numberArray[1]));
-        int value2 = Math.abs((numberArray[0] - numberArray[2]));
-        int value3 = Math.abs((numberArray[0] - numberArray[3]));
-
-        int arrayResult = Math.min(
-                Math.min(value1, value2),
-                Math.min(value2, value3));
-
-        System.out.println(arrayResult);
-        return arrayResult;
+        int min = Math.abs(numberArray[1] - numberArray[0]);
+        for (int i = 0; i < numberArray.length; i++) {
+            for (int j = i + 1; j < numberArray.length; j++) {
+                if (Math.abs(numberArray[j] - numberArray[i]) < min) {
+                    min = Math.abs(numberArray[j] - numberArray[i]);
+                }
+            }
+        }
+        System.out.println(min);
+        return min;
     }
 
     public static void main(String[] args) {
@@ -22,3 +21,5 @@ public class Part1 {
         arrayTopValue(numberArray);
     }
 }
+
+
